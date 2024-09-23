@@ -21,7 +21,7 @@ def main():
             print("Invalid priority level. Please enter high, medium, or low.")
             return
 
-    # Modify the reminder if the task is time-bound
+   
     if time_bound == "yes":
         reminder_message += " that requires immediate attention today!"
     elif time_bound == "no":
@@ -30,7 +30,6 @@ def main():
         print("Invalid input for time-bound. Please enter yes or no.")
         return
 
-    # Provide the customized reminder
     print(f"Reminder: {reminder_message}")
 
 if __name__ == "__main__":
